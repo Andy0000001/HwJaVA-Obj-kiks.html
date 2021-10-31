@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+var kiks = {
+            model :  " Nike Dunk",
+            color :  " Grey",
+            size :  " 43 EU",
+            storage :  " 5"
+        };
+var str = "";
+function kikss(givenObject){
+for ( var tempProperty in kiks)
+str += tempProperty + "-" + givenObject[tempProperty] + "\n"
+    alert(str);
+}
+kikss(kiks);
+
+var kiks = {
+            model :  " Nike Dunk",
+            color :  " Grey",
+            size :  " 43 EU",
+            storage :  " 5"
+        };
+        var str1 = "";
+function pay(givenObject) {
+    do{
+    var custumerWish = +prompt("Сколько пар хотите купить ?");
+    }
+    while
+    (custumerWish < 0); 
+    if (custumerWish < givenObject.storage) 
+    confirm("Хотите купить еще ?");
+    else
+    if
+    (custumerWish = givenObject.storage)
+    alert ("Вы купили все");
+    else (custumerWish > givenObject.storage)
+    str1 += (givenObject.storage - custumerWish);
+   alert ("Осталось всего - " + str1 +  "штук");
+   
+    /*var i = 0;
+    for(i > 0; i < givenObject.storage; i ++) 
+    var custumerWish = +prompt("Сколько пар хотите купить ?");
+    if (castumerWish > 0)
+    alert ("Правельный ввод");
+    else 
+    alert ("Неверный ввод")*/
+}
+pay(kiks);
+
+</script>
+
+
+</body>
+</html>
+
+
+
